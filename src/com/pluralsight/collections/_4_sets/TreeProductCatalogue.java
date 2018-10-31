@@ -1,7 +1,7 @@
 package com.pluralsight.collections._4_sets;
 
-import com.monotonic.collections.Product;
-import com.monotonic.collections.Supplier;
+import com.pluralsight.collections.Product;
+import com.pluralsight.collections.Supplier;
 
 import java.util.Iterator;
 import java.util.SortedSet;
