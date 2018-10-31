@@ -18,7 +18,7 @@ public class Supplier
         return name;
     }
 
-    public List<Product> getProducts()
+    public List<Product> products()
     {
         return products;
     }

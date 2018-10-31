@@ -1,19 +1,15 @@
-package com.pluralsight.collections;
-
 import java.util.Comparator;
 
 public class Product
 {
     public static final Comparator<Product> BY_WEIGHT
-            = Comparator.comparing(Product::getWeight);
-
-//    = new Comparator<Product>()
-//    {
-//        public int compare(final Product p1, final Product p2)
-//        {
-//            return Integer.compare(p1.getWeight(), p2.getWeight());
-//        }
-//    };
+        = new Comparator<Product>()
+    {
+        public int compare(final Product p1, final Product p2)
+        {
+            return Integer.compare(p1.getWeight(), p2.getWeight());
+        }
+    };
 
     private final String name;
     private final int weight;
@@ -38,9 +34,8 @@ public class Product
     public String toString()
     {
         return "Product{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                '}';
+            "name='" + name + '\'' +
+            ", weight=" + weight +
+            '}';
     }
 }
-
